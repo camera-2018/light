@@ -10,8 +10,8 @@ import {
   ToolboxComponent,
   TooltipComponent,
 } from 'echarts/components'
-import VChart, { THEME_KEY } from 'vue-echarts'
-import { provide, ref } from 'vue'
+import VChart from 'vue-echarts'
+import { ref } from 'vue'
 
 use([
   CanvasRenderer,
@@ -24,7 +24,6 @@ use([
   DataZoomComponent,
   LineChart,
 ])
-
 
 let base = +new Date(1968, 9, 3)
 const oneDay = 24 * 3600 * 1000
@@ -49,7 +48,7 @@ const option = ref({
   toolbox: {
     feature: {
       saveAsImage: {
-        title:'保存为图片',
+        title: '保存为图片',
       },
     },
     iconStyle: {
@@ -102,10 +101,11 @@ const option = ref({
     },
   ],
 })
+
 </script>
 
 <template>
-  <VChart class="chart" :option="option" :theme="isDark ? 'dark' : 'light'" />
+  <VChart class="chart" :option="option" :theme="isDark ? '#121212' : 'light'" />
 </template>
 
 <style scoped>

@@ -2,7 +2,6 @@ import {
   defineConfig,
   presetAttributify,
   presetIcons,
-  presetTypography,
   presetUno,
   presetWebFonts,
   transformerDirectives,
@@ -24,7 +23,7 @@ export default defineConfig({
       warn: true,
       extraProperties: presetIconExtraProperties,
     }),
-    presetTypography(),
+    // presetTypography(),
     presetAnu(),
 
     presetThemeDefault(),

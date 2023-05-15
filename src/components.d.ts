@@ -9,6 +9,7 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    ACheckbox: typeof import('anu-vue')['ACheckbox']
     AInput: typeof import('anu-vue')['AInput']
     Chart: typeof import('./components/Chart.vue')['default']
     README: typeof import('./components/README.md')['default']
