@@ -34,4 +34,7 @@ async function toggleLocales() {
       <div i-carbon-logo-github />
     </a>
   </nav>
+  <div class="p-5 text-3xl">
+    @2023 🐍🈵🈲⛰️ TEAM
+  </div>
 </template>

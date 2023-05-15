@@ -8,6 +8,8 @@ import {
   transformerDirectives,
   transformerVariantGroup,
 } from 'unocss'
+import { presetAnu, presetIconExtraProperties } from 'anu-vue'
+import { presetThemeDefault } from '@anu-vue/preset-theme-default'
 
 export default defineConfig({
   shortcuts: [
@@ -20,8 +22,13 @@ export default defineConfig({
     presetIcons({
       scale: 1.2,
       warn: true,
+      extraProperties: presetIconExtraProperties,
     }),
     presetTypography(),
+    // anu-vue preset
+    presetAnu(),
+    // default theme preset
+    presetThemeDefault(),
     presetWebFonts({
       fonts: {
         sans: 'DM Sans',
@@ -34,5 +41,6 @@ export default defineConfig({
     transformerDirectives(),
     transformerVariantGroup(),
   ],
+  include: [/.*\/anu-vue\.js(.*)?$/, './**/*.vue', './**/*.md'],
   safelist: 'prose prose-sm m-auto text-left'.split(' '),
 })
