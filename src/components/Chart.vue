@@ -1,6 +1,6 @@
 <script setup>
 import { graphic, use } from 'echarts/core'
-import { CanvasRenderer } from 'echarts/renderers'
+import { SVGRenderer } from 'echarts/renderers'
 import { LineChart, PieChart } from 'echarts/charts'
 import {
   DataZoomComponent,
@@ -10,11 +10,12 @@ import {
   ToolboxComponent,
   TooltipComponent,
 } from 'echarts/components'
+
 import VChart from 'vue-echarts'
 import { ref } from 'vue'
 
 use([
-  CanvasRenderer,
+  SVGRenderer,
   PieChart,
   TitleComponent,
   TooltipComponent,
