@@ -45,17 +45,6 @@ const option = ref({
   title: {
     left: 'center',
   },
-  toolbox: {
-    feature: {
-      saveAsImage: {
-        title: '保存为图片',
-      },
-    },
-    iconStyle: {
-      borderColor: '#c450c0',
-      color: '#aa55d7',
-    },
-  },
   xAxis: {
     type: 'category',
     boundaryGap: false,

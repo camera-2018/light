@@ -30,11 +30,24 @@ async function toggleLocales() {
       <div i-carbon-dicom-overlay />
     </RouterLink>
 
-    <a icon-btn rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
+    <a icon-btn rel="noreferrer" href="https://github.com/camera-2018/light" target="_blank" title="GitHub">
       <div i-carbon-logo-github />
     </a>
   </nav>
-  <div class="p-5 text-3xl">
-    @2023 🐍🈵🈲⛰️ TEAM
+  <div class="main_logo p-5 text-3xl">
+    @2023 <span class="logo">🐍🈵🈲⛰️</span> TEAM
   </div>
 </template>
+
+<style scoped>
+.logo {
+  text-shadow: 0 -6px 4px #da2424,
+  /*上*/ 4px -4px 4px #54c42b,
+  /*右上*/ 6px 0 4px #5d046e,
+  /*右*/ 4px 4px 4px #f3e6e6,
+  /*右下*/ 0 6px 4px #dab70d,
+  /*下*/ -4px 4px 4px #d917e7,
+  /*左下*/ -6px 0 4px #213be9,
+  /*左*/ -4px -4px 4px #131212;
+}
+</style>

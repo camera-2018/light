@@ -2,5 +2,6 @@
   "extends": [
     "@antfu",
     "@unocss"
-  ]
+  ],
+  "rules": {"vue/comma-dangle": "off"}
 }

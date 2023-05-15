@@ -1,4 +1,5 @@
 @import './markdown.css';
+@import url('https://fonts.loli.net/css2?family=Noto+Sans+Mono:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&display=swap');
 
 html,
 body,
@@ -6,6 +7,7 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Noto Sans SC', sans-serif;
 }
 
 html.dark {
@@ -26,4 +28,8 @@ html.dark {
   left: 0;
   width: 100%;
   height: 2px;
+}
+
+.main_logo {
+  font-family: '' !important;
 }
