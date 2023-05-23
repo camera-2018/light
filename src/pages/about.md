@@ -2,20 +2,13 @@
 title: About
 ---
 
-<div class="text-center">
-  <!-- You can use Vue components inside markdown -->
+<div class="text-center mt-10">
   <div i-carbon-dicom-overlay class="text-4xl -mb-6 m-auto" />
-  <h3>About</h3>
+  <h3>关于我们</h3>
 </div>
 
-[Vitesse](https://github.com/antfu/vitesse) is an opinionated [Vite](https://github.com/vitejs/vite) starter template made by [@antfu](https://github.com/antfu) for mocking apps swiftly. With **file-based routing**, **components auto importing**, **markdown support**, I18n, PWA and uses **UnoCSS** for styling and icons.
 
-```js
-// syntax highlighting example
-function vitesse() {
-  const foo = 'bar'
-  console.log(foo)
-}
-```
+<div class="text-center text-lg text-bold py-70">
+  本项目是 2023年恒生“LIGHT”金融科技杯暨第五届杭州电子科技大学 Python 程序设计大赛 的参赛作品的前端展示网站，由蛇漫金山 🐍🈵🈲⛰️ 队伍完成。
+</div>
 
-Check out the [GitHub repo](https://github.com/antfu/vitesse) for more details.

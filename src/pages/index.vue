@@ -15,6 +15,7 @@ const benchmark = ref(false)
 
 <template>
   <TheHeader class="p-5" />
+  <br>
   <div class="flex flex-row items-center justify-evenly gap-10 py-25">
     <div class="flex flex-col items-start">
       <h1 class="main_logo self-start justify-self-start bg-clip-text text-[3.6rem] font-bold text-dark-600 dark:text-light-600">
@@ -41,6 +42,7 @@ const benchmark = ref(false)
     <!-- <Card /> -->
     <svg class="h-100 w-100 rounded-1 from-pink-500 to-violet-500 bg-gradient-to-r p-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><rect width="7.33" height="7.33" x="1" y="1" fill="#FFFFFF"><animate id="svgSpinnersBlocksWave0" attributeName="x" begin="0;svgSpinnersBlocksWave1.end+0.2s" dur="0.6s" values="1;4;1" /><animate attributeName="y" begin="0;svgSpinnersBlocksWave1.end+0.2s" dur="0.6s" values="1;4;1" /><animate attributeName="width" begin="0;svgSpinnersBlocksWave1.end+0.2s" dur="0.6s" values="7.33;1.33;7.33" /><animate attributeName="height" begin="0;svgSpinnersBlocksWave1.end+0.2s" dur="0.6s" values="7.33;1.33;7.33" /></rect><rect width="7.33" height="7.33" x="8.33" y="1" fill="#FFFFFF"><animate attributeName="x" begin="svgSpinnersBlocksWave0.begin+0.1s" dur="0.6s" values="8.33;11.33;8.33" /><animate attributeName="y" begin="svgSpinnersBlocksWave0.begin+0.1s" dur="0.6s" values="1;4;1" /><animate attributeName="width" begin="svgSpinnersBlocksWave0.begin+0.1s" dur="0.6s" values="7.33;1.33;7.33" /><animate attributeName="height" begin="svgSpinnersBlocksWave0.begin+0.1s" dur="0.6s" values="7.33;1.33;7.33" /></rect><rect width="7.33" height="7.33" x="1" y="8.33" fill="#FFFFFF"><animate attributeName="x" begin="svgSpinnersBlocksWave0.begin+0.1s" dur="0.6s" values="1;4;1" /><animate attributeName="y" begin="svgSpinnersBlocksWave0.begin+0.1s" dur="0.6s" values="8.33;11.33;8.33" /><animate attributeName="width" begin="svgSpinnersBlocksWave0.begin+0.1s" dur="0.6s" values="7.33;1.33;7.33" /><animate attributeName="height" begin="svgSpinnersBlocksWave0.begin+0.1s" dur="0.6s" values="7.33;1.33;7.33" /></rect><rect width="7.33" height="7.33" x="15.66" y="1" fill="#FFFFFF"><animate attributeName="x" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="15.66;18.66;15.66" /><animate attributeName="y" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="1;4;1" /><animate attributeName="width" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="7.33;1.33;7.33" /><animate attributeName="height" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="7.33;1.33;7.33" /></rect><rect width="7.33" height="7.33" x="8.33" y="8.33" fill="#FFFFFF"><animate attributeName="x" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="8.33;11.33;8.33" /><animate attributeName="y" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="8.33;11.33;8.33" /><animate attributeName="width" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="7.33;1.33;7.33" /><animate attributeName="height" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="7.33;1.33;7.33" /></rect><rect width="7.33" height="7.33" x="1" y="15.66" fill="#FFFFFF"><animate attributeName="x" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="1;4;1" /><animate attributeName="y" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="15.66;18.66;15.66" /><animate attributeName="width" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="7.33;1.33;7.33" /><animate attributeName="height" begin="svgSpinnersBlocksWave0.begin+0.2s" dur="0.6s" values="7.33;1.33;7.33" /></rect><rect width="7.33" height="7.33" x="15.66" y="8.33" fill="#FFFFFF"><animate attributeName="x" begin="svgSpinnersBlocksWave0.begin+0.3s" dur="0.6s" values="15.66;18.66;15.66" /><animate attributeName="y" begin="svgSpinnersBlocksWave0.begin+0.3s" dur="0.6s" values="8.33;11.33;8.33" /><animate attributeName="width" begin="svgSpinnersBlocksWave0.begin+0.3s" dur="0.6s" values="7.33;1.33;7.33" /><animate attributeName="height" begin="svgSpinnersBlocksWave0.begin+0.3s" dur="0.6s" values="7.33;1.33;7.33" /></rect><rect width="7.33" height="7.33" x="8.33" y="15.66" fill="#FFFFFF"><animate attributeName="x" begin="svgSpinnersBlocksWave0.begin+0.3s" dur="0.6s" values="8.33;11.33;8.33" /><animate attributeName="y" begin="svgSpinnersBlocksWave0.begin+0.3s" dur="0.6s" values="15.66;18.66;15.66" /><animate attributeName="width" begin="svgSpinnersBlocksWave0.begin+0.3s" dur="0.6s" values="7.33;1.33;7.33" /><animate attributeName="height" begin="svgSpinnersBlocksWave0.begin+0.3s" dur="0.6s" values="7.33;1.33;7.33" /></rect><rect width="7.33" height="7.33" x="15.66" y="15.66" fill="#FFFFFF"><animate id="svgSpinnersBlocksWave1" attributeName="x" begin="svgSpinnersBlocksWave0.begin+0.4s" dur="0.6s" values="15.66;18.66;15.66" /><animate attributeName="y" begin="svgSpinnersBlocksWave0.begin+0.4s" dur="0.6s" values="15.66;18.66;15.66" /><animate attributeName="width" begin="svgSpinnersBlocksWave0.begin+0.4s" dur="0.6s" values="7.33;1.33;7.33" /><animate attributeName="height" begin="svgSpinnersBlocksWave0.begin+0.4s" dur="0.6s" values="7.33;1.33;7.33" /></rect></svg>
   </div>
+  <br>
   <br>
   <br>
   <br>
@@ -83,15 +85,95 @@ const benchmark = ref(false)
         </div>
       </div>
       <div>
-        <div>策略收益率</div>
+        <div>策略最大收益率</div>
         <div class="number">
           24.08%
         </div>
       </div>
       <div>
-        <div>最大回撤</div>
+        <div>策略最大回撤</div>
         <div class="number">
           47.37%
+        </div>
+      </div>
+      <div>
+        <div>策略夏普比率</div>
+        <div class="number">
+          7.55%
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-row gap-10 p-1">
+      <div>
+        <div>Annual Return</div>
+        <div class="number_small">
+          5.1788
+        </div>
+      </div>
+      <div>
+        <div>Cumulative Returns</div>
+        <div class="number_small">
+          18.2152
+        </div>
+      </div>
+      <div>
+        <div>Annual Volatility</div>
+        <div class="number_small">
+          0.7732
+        </div>
+      </div>
+      <div>
+        <div>Calmar Ratio</div>
+        <div class="number_small">
+          11.4334
+        </div>
+      </div>
+      <div>
+        <div>Stability</div>
+        <div class="number_small">
+          0.9091
+        </div>
+      </div>
+      <div>
+        <div>Max Drawdown</div>
+        <div class="number_small">
+          -0.4529
+        </div>
+      </div>
+      <div>
+        <div>Omega Ratio</div>
+        <div class="number_small">
+          1.5862
+        </div>
+      </div>
+      <div>
+        <div>Sortino Ratio</div>
+        <div class="number_small">
+          4.4631
+        </div>
+      </div>
+      <div>
+        <div>Skew</div>
+        <div class="number_small">
+          -0.0747
+        </div>
+      </div>
+      <div>
+        <div>Kurtosis</div>
+        <div class="number_small">
+          1.1738
+        </div>
+      </div>
+      <div>
+        <div>Tail Ratio</div>
+        <div class="number_small">
+          1.4138
+        </div>
+      </div>
+      <div>
+        <div>Daily Value At Risk</div>
+        <div class="number_small">
+          -0.089
         </div>
       </div>
     </div>
@@ -107,5 +189,8 @@ meta:
 <style scoped>
 .number {
   @apply from-pink-500 to-violet-500 bg-gradient-to-r bg-clip-text py-3 text-[3rem] font-bold text-transparent
+}
+.number_small {
+  @apply from-pink-500 to-violet-500 bg-gradient-to-r bg-clip-text py-3 text-lg font-bold text-transparent
 }
 </style>
