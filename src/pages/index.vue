@@ -82,15 +82,15 @@ const end_time = ref('2023-04-02')
         </div>
       </div>
       <div>
-        <div>策略年化收益率</div>
+        <div>策略收益率</div>
         <div class="number">
-          11.97%
+          24.08%
         </div>
       </div>
       <div>
         <div>最大回撤</div>
         <div class="number">
-          3.50%
+          47.37%
         </div>
       </div>
     </div>
