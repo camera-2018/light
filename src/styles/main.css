@@ -33,3 +33,11 @@ html.dark {
 .main_logo {
   font-family: '' !important;
 }
+
+.chart {
+  height: 400px;
+}
+
+#date,#detail {
+  @apply from-pink-500 to-violet-500 bg-gradient-to-r bg-clip-text py-1 text-sm font-bold text-transparent
+}

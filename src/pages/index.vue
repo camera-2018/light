@@ -10,6 +10,7 @@ function toGithub() {
 }
 const start_time = ref('2015-04-05')
 const end_time = ref('2023-04-02')
+const benchmark = ref(false)
 </script>
 
 <template>
@@ -58,8 +59,8 @@ const end_time = ref('2023-04-02')
   <div class="flex flex-col items-center justify-center gap-5">
     <div class="flex flex-row items-center gap-100">
       <div class="justfy-center flex flex-row items-center gap-1">
-        <input id="comments" name="comments" type="checkbox" class="h-4 w-4 rounded focus:border-4 focus:border-indigo-500/100">
-        <div>超额收益率</div>
+        <input id="show_benchmark" v-model="benchmark" name="show_benchmark" type="checkbox" class="h-4 w-4 rounded focus:border-4 focus:border-indigo-500/100">
+        <label for="show_benchmark">显示 BenchMark</label>
       </div>
       <label class="block flex flex-row items-center gap-2">
         <span class="block w-10 text-sm font-medium text-slate-700 after:ml-0.5 dark:text-[#e5e7eb]">
@@ -74,11 +75,11 @@ const end_time = ref('2023-04-02')
         <input v-model="end_time" type="date" name="date_end" class="mt-1 block w-full border border-slate-300 rounded-md bg-white px-3 py-2 shadow-sm focus:border-sky-500 dark:bg-[#121212] sm:text-sm focus:outline-none focus:ring-1 focus:ring-sky-500 placeholder-slate-400" placeholder="2023/04/02">
       </label>
     </div>
-    <div class="flex flex-row gap-13 p-5">
+    <div class="flex flex-row gap-35 p-5">
       <div>
         <div>策略收益</div>
         <div class="number">
-          ¥350328.58
+          ¥1921518
         </div>
       </div>
       <div>
@@ -94,7 +95,7 @@ const end_time = ref('2023-04-02')
         </div>
       </div>
     </div>
-    <Chart />
+    <Chart :is_benchmark="benchmark" />
   </div>
 </template>
 
